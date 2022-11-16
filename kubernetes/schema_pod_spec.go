@@ -248,6 +248,13 @@ func podSpecFields(isUpdatable, isComputed bool) map[string]*schema.Schema {
 				string(api.RestartPolicyNever),
 			}, false),
 		},
+		"runtime_class_name": {
+			Type:        schema.TypeString,
+			Optional:    true,
+			Computed:    isComputed,
+			ForceNew:    !isUpdatable,
+			Description: "RuntimeClassName is a feature for selecting the container runtime configuration. The container runtime configuration is used to run a Pod's containers. More info: https://kubernetes.io/docs/concepts/containers/runtime-class",
+		},
 		"security_context": {
 			Type:        schema.TypeList,
 			Optional:    true,

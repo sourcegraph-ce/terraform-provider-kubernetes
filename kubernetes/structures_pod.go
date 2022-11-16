@@ -101,6 +101,10 @@ func flattenPodSpec(in v1.PodSpec) ([]interface{}, error) {
 		att["restart_policy"] = in.RestartPolicy
 	}
 
+	if in.RuntimeClassName != nil {
+		att["runtime_class_name"] = *in.RuntimeClassName
+	}
+
 	if in.SecurityContext != nil {
 		att["security_context"] = flattenPodSecurityContext(in.SecurityContext)
 	}
@@ -760,6 +764,10 @@ func expandPodSpec(p []interface{}) (*v1.PodSpec, error) {
 
 	if v, ok := in["restart_policy"].(string); ok {
 		obj.RestartPolicy = v1.RestartPolicy(v)
+	}
+
+	if v, ok := in["runtime_class_name"].(string); ok && v != "" {
+		obj.RuntimeClassName = ptrToString(v)
 	}
 
 	if v, ok := in["security_context"].([]interface{}); ok && len(v) > 0 {
