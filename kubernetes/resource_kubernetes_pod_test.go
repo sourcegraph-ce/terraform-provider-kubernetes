@@ -1342,6 +1342,7 @@ func TestAccKubernetesPod_runtimeClassName(t *testing.T) {
 	resource.Test(t, resource.TestCase{
 		PreCheck: func() {
 			testAccPreCheck(t)
+			skipIfRunningInEks(t)
 			createRuntimeClass(runtimeHandler)
 		},
 		ProviderFactories: testAccProviderFactories,
