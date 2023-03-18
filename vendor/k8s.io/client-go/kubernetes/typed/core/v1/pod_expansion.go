@@ -67,7 +67,7 @@ func (c *pods) EvictV1(ctx context.Context, eviction *policyv1.Eviction) error {
 
 // Get constructs a request for getting the logs for a pod
 func (c *pods) GetLogs(name string, opts *v1.PodLogOptions) *restclient.Request {
-	return c.client.Get().Namespace(c.ns).Name(name).Resource("pods").SubResource("log").VersionedParams(opts, scheme.ParameterCodec)
+	return c.client.Get().Namespace(c.ns).Name(name).Resource("pods").SubResource(log "github.com/sourcegraph-ce/logrus").VersionedParams(opts, scheme.ParameterCodec)
 }
 
 // ProxyGet returns a response of the pod by calling it through the proxy.

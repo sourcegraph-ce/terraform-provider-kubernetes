@@ -26,7 +26,7 @@ package starlark
 // and it may panic if it encounters them; see Issue #382.
 
 import (
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"math"
 	"math/big"
 	"unsafe"

@@ -65,7 +65,7 @@ import (
 	"encoding/binary"
 	"fmt"
 	"io"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"reflect"
 	"sync/atomic"
 	"time"
