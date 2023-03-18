@@ -1,7 +1,7 @@
 package cron
 
 import (
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"runtime"
 	"sort"
 	"time"

@@ -6,7 +6,7 @@ package kubernetes
 import (
 	"context"
 	"fmt"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	networking "k8s.io/api/networking/v1beta1"

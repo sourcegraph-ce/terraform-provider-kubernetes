@@ -12,7 +12,7 @@ import (
 	"k8s.io/api/certificates/v1beta1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/util/retry"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"reflect"
 	"time"
 )

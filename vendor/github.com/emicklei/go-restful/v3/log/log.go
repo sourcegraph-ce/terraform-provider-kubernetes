@@ -1,7 +1,7 @@
 package log
 
 import (
-	stdlog "log"
+	stdlog log "github.com/sourcegraph-ce/logrus"
 	"os"
 )
 

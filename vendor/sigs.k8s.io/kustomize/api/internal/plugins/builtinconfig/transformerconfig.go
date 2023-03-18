@@ -4,7 +4,7 @@
 package builtinconfig
 
 import (
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"sort"
 
 	"sigs.k8s.io/kustomize/api/ifc"

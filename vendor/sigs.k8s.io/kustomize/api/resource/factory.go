@@ -6,7 +6,7 @@ package resource
 import (
 	"encoding/json"
 	"fmt"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"strings"
 
 	"sigs.k8s.io/kustomize/api/ifc"

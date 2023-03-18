@@ -29,7 +29,7 @@ package compile // import "go.starlark.net/internal/compile"
 import (
 	"bytes"
 	"fmt"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"os"
 	"path/filepath"
 	"strconv"

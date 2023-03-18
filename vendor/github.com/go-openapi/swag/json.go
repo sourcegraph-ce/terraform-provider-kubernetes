@@ -17,7 +17,7 @@ package swag
 import (
 	"bytes"
 	"encoding/json"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"reflect"
 	"strings"
 	"sync"

@@ -4,7 +4,7 @@ package winterm
 
 import (
 	"bytes"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"os"
 	"strconv"
 

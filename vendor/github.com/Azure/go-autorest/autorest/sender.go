@@ -18,7 +18,7 @@ import (
 	"context"
 	"crypto/tls"
 	"fmt"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"math"
 	"net"
 	"net/http"
