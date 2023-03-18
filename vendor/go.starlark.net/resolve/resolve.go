@@ -83,7 +83,7 @@ package resolve // import "go.starlark.net/resolve"
 
 import (
 	"fmt"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"sort"
 	"strings"
 

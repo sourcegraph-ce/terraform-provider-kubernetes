@@ -5,7 +5,7 @@ package accumulator
 
 import (
 	"fmt"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 
 	"sigs.k8s.io/kustomize/api/filters/nameref"
 	"sigs.k8s.io/kustomize/api/internal/plugins/builtinconfig"

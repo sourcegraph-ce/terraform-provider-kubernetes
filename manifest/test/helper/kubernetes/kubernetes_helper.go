@@ -9,7 +9,7 @@ package kubernetes
 import (
 	"context"
 	"encoding/json"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"testing"
 
 	"k8s.io/apimachinery/pkg/api/errors"

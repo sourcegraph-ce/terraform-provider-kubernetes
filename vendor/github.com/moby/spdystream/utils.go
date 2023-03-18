@@ -17,7 +17,7 @@
 package spdystream
 
 import (
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"os"
 )
 
