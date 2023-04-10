@@ -33,4 +33,4 @@ website/vendor
 !command/test-fixtures/**/.terraform/
 
 # output binary
-terraform-provider-kubernetes
+terraform-provider-kuberneteschanging_this_one_line_to_create_bc_branch_with_batch_changes
